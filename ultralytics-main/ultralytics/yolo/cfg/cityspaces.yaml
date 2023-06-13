@@ -1,0 +1,59 @@
+# Ultralytics YOLO 🚀, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: yolo train data=coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: D:/Internship_C/about-yolov8/cityscapes/ # dataset root dir
+train:
+- images/train/aachen
+- images/train/bochum
+- images/train/bremen
+- images/train/cologne
+- images/train/darmstadt
+- images/train/dusseldorf
+- images/train/erfurt
+- images/train/hamburg
+- images/train/hanover
+- images/train/jena
+- images/train/krefeld
+- images/train/monchengladbach
+- images/train/strasbourg
+- images/train/stuttgart
+- images/train/tubingen
+- images/train/ulm
+- images/train/weimar
+- images/train/zurich
+
+val:
+- images/val/frankfurt
+- images/val/lindau
+- images/val/munster
+test:  # test images (optional)
+
+# Classes
+names:
+  0: road
+  1: sidewalk
+  2: building
+  3: wall
+  4: fence
+  5: pole
+  6: traffic light
+  7: traffic sign
+  8: vegetation
+  9: terrain
+  10: sky
+  11: person
+  12: rider
+  13: car
+  14: truck
+  15: bus
+  16: train
+  17: motorcycle
+  18: bicycle
+  
